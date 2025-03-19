@@ -1,8 +1,9 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "nisanth1010/docker-app:latest"  // Change this if needed
+        DOCKER_IMAGE = "Nisanth1010/docker-app:latest"  // Change this to your registry
         CONTAINER_NAME = "docker-running-app"
+        REGISTRY_CREDENTIALS = "docker-hub-credentials"  // Jenkins credentials ID
     }
 
     stages {
